@@ -1,0 +1,86 @@
+body{
+  background-color: #090909;
+  color: #fff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.days {
+  display: flex;
+  overflow-x: scroll;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  scroll-snap-type: x proximity;
+  justify-content: space-evenly;
+}
+
+.day {
+  margin: 1rem;
+  background-color: #111;
+  min-width: 11rem;
+  padding: 2rem;
+  border-radius: 4px;
+}
+
+.titulo {
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem;
+}
+
+#add {
+  padding: 5px 10px;
+  color: rgb(14, 25, 2);
+  background-color: chartreuse;
+  font-weight: 700;
+  border-radius: 3px;
+  border: 1px solid rgb(151, 236, 60);
+}
+#add:hover {
+  box-shadow: 1px 1px 10px chartreuse;
+  color: rgb(0, 0, 0);
+}
+
+#del {
+  padding: 2px 3px;
+  color: rgb(83, 1, 8);
+  background-color: rgb(255, 0, 21);
+  font-weight: 800;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid rgb(83, 1, 8);
+}
+#del:hover {
+  box-shadow: 1px 1px 10px rgb(255, 0, 21);
+  color: rgb(33, 1, 4)
+}
+
+
+#ul {
+  list-style-type: none;
+}
+
+#li {
+  text-transform: capitalize;
+  margin-left: -43px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input {
+  margin-right: 10px;
+}
+
+label {
+  font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+  .days {
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}
